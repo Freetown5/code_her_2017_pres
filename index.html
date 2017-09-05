@@ -8,6 +8,7 @@
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<!-- Printing and PDF exports -->
@@ -22,33 +23,153 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Putting it all together: Combining CSS Tools and Methodologies</section>
+				<section>
+				<h1>Putting it all together: Combining CSS Tools and Methodologies</h1>
+				<!-- <div class="title_images">
+					<img src="images/bem_logo.png" alt="BEM">
+					<img src="images/bootstrap_logo.png" alt="Bootstrap">
+					<img src="images/less_logo.png" alt="LESS">
+					<img src="images/postCSS_logo.png" alt="PostCSS">
+					<img src="images/sass_logo.png" alt="SASS">
+				</div> -->
+				<p class="my_info">By: Isatu (Isa) Conteh</p>
+				<p class=" my_info">September 16th 2017</p>
+					<aside class="notes">
+						<ul>
+							<li>Greetings/Welcome</li>
+							<li>My name is ...and I'm</li>
+							<li>Thanks for coming out</li>
+							<li>Lots of other talk options</li>
+							<li>Glad they chose this one</li>
+							<li>Hope this is helpful and you get something out of it</li>
+							<li>Transition: With that being said, let's getting into discussing ...</li>
+						</ul> 
+					</aside>
+				</section>
 
 				<section>
-					<section>Section 1: Details</section>
+					<section>Section 1: Details
+						<img src="images/details_quote.jpg" alt="details">
+						<aside class="notes">
+							<p>The Details</p>
+							<p>Transition: Starting with ...</p>
+						</aside>
+					</section>
+
 
 					<section>
-						<p>Who is this person trying to teach me things?</p> <p>What does she know?</p>
+						<p>What are we trying to do/learn here? Why?</p>
+						<ol>
+							<li>Highest Level: Figure out how to set up and organize your css</li>
+							<li>Understanding why organizing css matters</li>
+							<li>Knowing what your options are for css tooling and techniques</li>
+							<li>Figuring out how to choose what you need</li>
+							<li>And how to implement these solutions in your projects and get them to work well with other front-end (and back-end) tools</li>
+						</ol>
+						<aside class="notes">
+							<p>Talking about specifically ...</p>
+							<p>Item 4: I'm hoping that by the time you leave you'll be adept at...</p>
+							<p>Transition: Now your probably wondering...</p>
+						</aside>
+					</section>
+
+					<section>
+						<!-- So now that you know what this is about you might ask -->
+						<p>Who is this person trying to teach me things?</p>
+						<p>What does she know?</p>
+						<img src="images/question-mark.png" alt="Who?">
+						<aside class="notes">
+							<p>Who am I and why am I trying to teach you things</p>
+							<p>What background do I have...</p>
+							<p>That makes me qualified to speak on this</p>
+							<p>Transition: Well...</p>
+						</aside>
+					</section>
+
+					<section>
+						<p>Background:</p>
+						<ol>
+							<li>Professional: Developer at the Washington Post</li>
+							<li>Professional: Web Developer at Speak Agent</li>
+							<li>Volunteer: Women Who Code DC Front-end Lab Lead</li>
+							<li>Volunteer: Women Who Code DC Project Lead</li>
+						</ol>
+						<aside class="notes">
+							<ol>
+								<li>Which means: Develop anything that needs developing. Using a host of different technologies.</li>
+								<li>Before that..: Speak agent is an Ed (Educational) Tech company in Rockville.</li>
+								<li>Before that..(not actively working in dev but..): Web Development Immersive student at GA</li>
+								<li>WWCDC front-end lab lead 2yrs before</li>
+								<li>Transitioning in being a project lead </li>
+								<li>Transition: Okay, so specifically what did that mean front-end wise...</li>
+							</ol>
+						</aside>
+					</section>
+
+					<section>
+						<p>Time spent doing front-endy things</p>
+						<ol>
+							<li>At the Washington Post: ~15% so far</li>
+							<li>At Speak Agent: 100% Angular 1.4</li>
+							<li>As Front-end Lab Lead: 100%</li>
+							<li>Bonus - started out with static web pages ~5 years ago: 100%</li>
+							<li>Double Bonus - use front-end tools for side project: 70%</li>
+						</ol>
+						<aside class="notes">
+							<ol>
+								<li>Mostly in Python except for some limited template design for feeds</li>
+								<li>Straight up Angular Dev. Took visual comps, built them in HTML/CSS, made functional with JS (angular style)</li>
+								<li>Before they started paying me, began by rebuilding ugly static sites for fun</li>
+								<li>Currently using side project to mess around with stuff like Webpack and Vue.js</li>
+								<li>Transition: So ...</li>
+							</ol>
+						</aside>
 					</section>
 
 					<section>
 						<p>Where did I get the idea to do this presentation from?</p>
-					</section>
-
-					<section>
-						<p>What are we trying to do/learn here? Why?</p>
-					</section>
-
-					<section>
 						<p>Why we’re focusing on CSS?</p>
+						<img src="images/why.png" alt="Why?">
+
+						<aside class="notes">
+							<p>What experiences led me specifically to talk about this?</p>
+							<p>Ionic project at Speak Agent (Details)</p>
+							<p>Started it without thinking about dev environment structure</p>
+							<p>After several months, ended up in a ton "technical debt"</p>
+							<p>Took months to fix</p>
+							<p>Never even got to merge all fixes</p>
+							<p>Left dev env. in more of a mess than I preferred to</p>
+							<p>Could have been avoided if set up properly the first time</p>
+							<p>Transition: So..</p>
+						</aside>
 					</section>
 
 					<section>
 						<p>What I’m hoping you know</p>
+						<p>Baseline:</p>
+						<ol>
+							<li>HTML/CSS</li>
+						</ol>
+						<p>Nice to Haves:</p>
+						<ol>
+							<li>Used some helpful tools (SASS, LESS, Bootstrap)</li>
+							<li>Some experience with integrating front-end with back-end.</li>
+						</ol>
+
+						<aside class="notes">
+							<p>What kind of background knowledge should I have to get the most out of this?</p>
+							<p>Basic HTML/CSS. Classes, ID's, selectors etc.</p>
+							<p>Also, helps to have some experience with at least one or two css tools: SASS or PostCSS is enough</p>
+							<p>Possibly some experince with using css in larger project: Full framework templates(Django, Rails, Spring) or Front-end Frameworks (Angular, React, etc.)</p>
+						</aside>
 					</section>
 
 					<section>
 						<p>Looking to brush up on the fundamentals first? Try Here..</p>
+
+						<aside class="notes">
+							<p>So what if I'm short on knowledge of even the easier stuff</p>
+						</aside>
 					</section>
 				</section>
 
