@@ -1,3 +1,7 @@
+.titles{
+	text-decoration: underline;
+}
+
 .title_images{
 	width: 100%;
 	height:50%;
@@ -19,7 +23,35 @@
 	font-size: 1.3em;
 }
 
+section .present .float-left{
+	float: left;
+}
+
+.definitions{
+	color: #FE0000;
+	font-style: italic;
+}
+
+.work{
+	color: #AE1AF7; 
+}
+
+.volunteer{
+	color: #8DC63F;
+}
+
+.think{
+	color: #FF9800;
+}
+
+.choice-items{
+	float: left;
+}
 /*.reveal p{
 	font-size: .5em;
 }*/
+
+.list-align{
+	float: left;
+}
 

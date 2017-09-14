@@ -7,7 +7,7 @@
 		<title>CSS Tools and Methodologies</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/theme/league.css">
 		<link rel="stylesheet" href="css/custom.css">
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
@@ -23,15 +23,10 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
+<!-- Intro -->
 				<section>
 				<h1>Putting it all together: Combining CSS Tools and Methodologies</h1>
-				<!-- <div class="title_images">
-					<img src="images/bem_logo.png" alt="BEM">
-					<img src="images/bootstrap_logo.png" alt="Bootstrap">
-					<img src="images/less_logo.png" alt="LESS">
-					<img src="images/postCSS_logo.png" alt="PostCSS">
-					<img src="images/sass_logo.png" alt="SASS">
-				</div> -->
+				<img src="images/homepage_option1.gif" style="height:60%; width:60%" alt="BEM">
 				<p class="my_info">By: Isatu (Isa) Conteh</p>
 				<p class=" my_info">September 16th 2017</p>
 					<aside class="notes">
@@ -47,6 +42,7 @@
 					</aside>
 				</section>
 
+<!-- Section 1 -->
 				<section>
 					<section>Section 1: Details
 						<img src="images/details_quote.jpg" alt="details">
@@ -58,7 +54,7 @@
 
 
 					<section>
-						<p>What are we trying to do/learn here? Why?</p>
+						<p class="titles">What are we trying to do/learn here? Why?</p>
 						<ol>
 							<li>Highest Level: Figure out how to set up and organize your css</li>
 							<li>Understanding why organizing css matters</li>
@@ -87,12 +83,12 @@
 					</section>
 
 					<section>
-						<p>Background:</p>
+						<p class="titles">Background:</p>
 						<ol>
-							<li>Professional: Developer at the Washington Post</li>
-							<li>Professional: Web Developer at Speak Agent</li>
-							<li>Volunteer: Women Who Code DC Front-end Lab Lead</li>
-							<li>Volunteer: Women Who Code DC Project Lead</li>
+							<li><span class="work">Professional:</span> Developer at the Washington Post</li>
+							<li><span class="work">Professional:</span> Web Developer at Speak Agent</li>
+							<li><span class="volunteer">Volunteer:</span> Women Who Code DC Front-end Lab Lead</li>
+							<li><span class="volunteer">Volunteer:</span> Women Who Code DC Project Lead</li>
 						</ol>
 						<aside class="notes">
 							<ol>
@@ -107,13 +103,13 @@
 					</section>
 
 					<section>
-						<p>Time spent doing front-endy things</p>
+						<p class="titles">Time spent doing front-endy things</p>
 						<ol>
-							<li>At the Washington Post: ~15% so far</li>
-							<li>At Speak Agent: 100% Angular 1.4</li>
+							<li>At the <i>Washington Post:</i> ~15% so far</li>
+							<li>At <i>Speak Agent:</i> 100% Angular 1.4</li>
 							<li>As Front-end Lab Lead: 100%</li>
-							<li>Bonus - started out with static web pages ~5 years ago: 100%</li>
-							<li>Double Bonus - use front-end tools for side project: 70%</li>
+							<li>*Bonus* - started out with static web pages ~5 years ago: 100%</li>
+							<li>**Double Bonus** - use front-end tools for side project: 70%</li>
 						</ol>
 						<aside class="notes">
 							<ol>
@@ -145,18 +141,30 @@
 					</section>
 
 					<section>
-						<p>What I’m hoping you know</p>
-						<p>Baseline:</p>
-						<ol>
-							<li>HTML/CSS</li>
-						</ol>
-						<p>Nice to Haves:</p>
+						<p class="titles">What I’m hoping you know</p>
+						<div class="float-left">
+							<p><i>Baseline:</i></p>
+							<p>
+								<ol>
+									<li>HTML/CSS</li>
+								</ol>
+							</p>
+							<p><i>Nice to Haves:</i></p>
+						</div>
 						<ol>
 							<li>Used some helpful tools (SASS, LESS, Bootstrap)</li>
 							<li>Some experience with integrating front-end with back-end.</li>
 						</ol>
 
 						<aside class="notes">
+							<p><i>Ask about everyones experience levels:</i>
+							<ul>
+								<li>How many of you are familiar with HTML/CSS</li>
+								<li>Actively work with it?</li>
+								<li>Front-end in general?</li>
+								<li>Any kind of programming, backend included?</li>
+							</ul>
+							</p>
 							<p>What kind of background knowledge should I have to get the most out of this?</p>
 							<p>Basic HTML/CSS. Classes, ID's, selectors etc.</p>
 							<p>Also, helps to have some experience with at least one or two css tools: SASS or PostCSS is enough</p>
@@ -165,7 +173,13 @@
 					</section>
 
 					<section>
-						<p>Looking to brush up on the fundamentals first? Try Here..</p>
+						<p class="titles">Looking to brush up on the fundamentals first? Try Here..</p>
+						<ol>
+							<li>Codeacademy: <a href="https://www.codecademy.com/learn/learn-html-css">https://www.codecademy.com/learn/learn-html-css</a></li>
+							<li>KhanAcademy: <a href="https://www.khanacademy.org/computing/computer-programming/html-css">https://www.khanacademy.org/computing/computer-programming/html-css</a></li>
+							<li>Building Your first webpage: <a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/">http://learn.shayhowe.com/html-css/building-your-first-web-page/</a></li>
+							<li>CodeSchool: <a href="https://www.codeschool.com/">https://www.codeschool.com/</a></li>
+						</ol>
 
 						<aside class="notes">
 							<p>So what if I'm short on knowledge of even the easier stuff</p>
@@ -173,164 +187,298 @@
 					</section>
 				</section>
 
+<!-- Section 2 -->
 				<section>
-					<section>Section 2 — Tools</section>
-
 					<section>
-						<p>Frameworks (CSS, not javascript)</p>
-						<p><i>Definition: </i></p>
+						<p>Section 2 — Tools</p>
+						<img src="images/gear_tools.png" alt="tools">
 					</section>
 
 					<section>
-						<p>Frameworks (CSS, not javascript)</p>
+						<p class="titles">Frameworks (CSS, not javascript)</p>
+						<p><span class="definitions">Definition:</span> CSS frameworks are pre-prepared software frameworks that are meant to allow for easier, more standards-compliant web design using the Cascading Style Sheets language. Most of these frameworks contain at least a grid.</p>
+					</section>
+
+					<section>
+						<p class="titles">Frameworks (CSS, not javascript)</p>
 						<ul>
-							<li>Item 1</li>
+							<li>Bootstrap: <a href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+							<li>Foundation: <a href="http://foundation.zurb.com/">http://foundation.zurb.com/</a></li>
+							<li>Materialize: <a href="http://materializecss.com/">http://materializecss.com/</a></li>
+							<li>Pure CSS: <a href="https://purecss.io/">https://purecss.io/</a></li>
 						</ul>
 					</section>
 
 					<section>
-						<p>Preprocessors</p>
-						<p><i>Definition: </i></p>
+						<p class="titles">Preprocessors</p>
+						<p><span class="definitions">Definition:</span> Preprocessors are programs that take code written in their own specific language and convert it to CSS.</i></p>
 					</section>
 
 					<section>
-						<p>Preprocessors</p>
+						<p class="titles">Preprocessors</p>
 						<ul>
-							<li>Item A</li>
+							<li>SASS (Syntactically Awesome Stylesheets)</li>
+							<li>SCSS (Sassy CSS) <a href="http://sass-lang.com/">http://sass-lang.com/</a></li>
+							<li>LESS <a href="http://lesscss.org/">http://lesscss.org/</a></li>
+							<li>Stylus <a href="http://stylus-lang.com/">http://stylus-lang.com/</a></li>
 						</ul>
 					</section>
 
 					<section>
-						<p>Naming Methodologies</p>
-						<p><i>Definition:</i></p>
+						<p class="titles">Naming Methodologies/Conventions</p>
+						<p><span class="definitions">Definition:</span> Rules and strategies for writing and using css classes, id's etc. that make css codebases easier to read and debug.</p>
 					</section>
 
 					<section>
-						<p>Naming Methodologies</p>
+						<p class="titles">Naming Methodologies</p>
 						<ul>
-							<li>Item 1</li>
+							<li>BEM (Block, Element, Modifier) <a href="http://getbem.com/">http://getbem.com/</a></li>
+							<li>SMACCS (Scalable and Modular Architecture for CSS) <a href="https://smacss.com/">https://smacss.com/</a></li>
+							<li>OOCSS (Object Oriented CSS) <a href="https://github.com/stubbornella/oocss/wiki">https://github.com/stubbornella/oocss/wiki</a></li>
+							<li>ITCSS (Inverted Triangle CSS) <a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/</a></li>
 						</ul>
 					</section>
 
 					<section>
-						<p>Components</p>
-						<p><i>Definition:</i></p>
+						<p class="titles">Other tools: Libraries and such</p>
+						<p><span class="definitions">Definition:</span> other programs and tools that can help with organizing and using css</p>
 					</section>
 
 					<section>
-						<p>Components</p>
+						<p class="titles">Other Tools: Libraries and such</p>
 						<ul>
-							<li>Item A</li>
+							<li>Flexbox <a href="https://flexbox.io/">https://flexbox.io/</a></li>
+							<li>Font Awesome <a href="http://fontawesome.io/">http://fontawesome.io/</a></li>
+							<li>Animate.css <a href="https://daneden.github.io/animate.css/">https://daneden.github.io/animate.css/</a></li>
 						</ul>
 					</section>
 
 					<section>
-						<p>Grids</p>
-						<p><i>Definition:</i></p>
-					</section>
-
-					<section>
-						<p>Grids</p>
+						<p class="titles">Finding Information</p>
+						<p>Information can most easily be found in the form of:</p>
 						<ul>
-							<li>Item 1</li>
-						</ul>
-					</section>
-
-					<section>
-						<p>Syntactical Sugar: Libraries and such</p>
-						<p><i>Definition:</i></p>
-					</section>
-
-					<section>
-						<p>Syntactical Sugar: Libraries and such</p>
-						<ul>
-							<li>Item A</li>
-						</ul>
-					</section>
-
-					<section>
-						<p>Resources</p>
-						<ul>
-							<li>First resource here</li>
+							<li><span class="volunteer">Docs</span> (Documentation)</li>
+							<li><span class="volunteer">Blogs</span> (Medium, CSS Tricks etc.)</li>
+							<li><span class="volunteer">Tutorials/ Online Classes</span> (Udemy, Linda.com, Udacity etc.)</li>
 						</ul>
 					</section>
 				</section>
-
+<!-- Section 3 -->
 				<section>
-					<section>Section 3 — Choices</section>
+					<section>
+						Section 3 — Choices
+						<img src="images/choices.jpg" alt="choices">
+					</section>
 
 					<section>
 						<p>What to use, When to use it, When not to use it</p>
+						<img src="images/how.jpg" alt="choices">
 					</section>
 
 					<section>
-						<p>Choosing between frameworks</p>
-						<p><b>Things to consider/think about:</b></p>
-						<p><i>Example:</i></p>
+						<p class="titles">Choosing between frameworks</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">1. Do you need one?</b>
+						<ul class="list-align">
+							<li>How large is your project?</li>
+							<li>Do you need out of the box features?</li>
+							<li>How much time do you have?</li>
+							<li>Are there any size or speed requirements?</li>
+						</ul>
 					</section>
 
 					<section>
-						<p>Choosing between preprocessors</p>
-						<p><b>Things to consider/think about:</b></p>
-						<p><i>Example:</i></p>
+						<p class="titles">Choosing between frameworks</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">2. What to consider when choosing.</b>
+						<ul class="list-align">
+							<li>Is there a lot of customization involved?</li>
+							<li>Can the design be easily adapted?</li>
+							<li>Do you and or your developers have any prior experience with any of them?</li>
+						</ul>
 					</section>
 
 					<section>
-						<p>Choosing between naming methodologies/conventions</p>
-						<p><b>Things to consider/think about:</b></p>
-						<p><i>Example:</i></p>
+						<p class="titles">Choosing between preprocessors</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">1. Do you need one?</b>
+						<ul class="list-align">
+							<li>Will you be writing a lot of css?</li>
+							<li>Where and how is your site being hosted?</li>
+							<li>Are you or the people on your team more traditional programmers?</li>
+							<li>Again, are there any size or speed requirements?</li>
+						</ul>
+					</section>
+		
+					<section>
+						<p class="titles">Choosing between preprocessors</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">2. What to consider when choosing.</b>
+						<ul class="list-align">
+							<li>Are you using any other specific front-end tools that may be more useful with one than the other?</li>
+							<li>Again, are you or any of the other devs on your team more familiar with one or the other?</li>
+							<li>Is flexibility important (Similar to customization question)?</li>
+						</ul>
 					</section>
 
 					<section>
-						<p>Choosing beween components</p>
-						<p><b>Things to consider/think about:</b></p>
-						<p><i>Example:</i></p>
+						<p class="titles">Choosing between naming methodologies/conventions</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">1. Do you need one?</b>
+						<ul class="list-align">
+							<li>Are you styling a lot of different content?</li>
+							<li>Will many people be working on your project?</li>
+							<li>Are you worried about maintainability?</li>
+							<li>Will a good naming strategy aid in making communication better?</li>
+						</ul>
 					</section>
 
 					<section>
-						<p>Choosing between Grids</p>
-						<p><b>Things to consider/think about:</b></p>
-						<p><i>Example:</i></p>
+						<p class="titles">Choosing between naming methodologies/conventions</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">2. What to consider when choosing.</b>
+						<ul class="list-align">
+							<li>How do you discuss your design?</li>
+							<li>When figuring out how to style certain parts of a page, how do you break things up?</li>
+							<li>And of course, do you and or your developers have any prior experience with any of the available options?</li>
+						</ul>
 					</section>
 
 					<section>
-						<p>Choosing between libraries</p>
-						<p><b>Things to consider/think about:</b></p>
+						<p class="titles">Choosing between libraries</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">1. Do you need one?</b>
+						<ul class="list-align">
+							<li>Are there any extra features you need that can be done in css that don't exist in any of the other formats?</li>
+							<li>Will using a library cut down on the work you have to do to create it?</li>
+							<li>Do you only need a select few css features?</li>
+						</ul>
+					</section>
+
+					<section>
+						<p class="titles">Choosing between libraries</p>
+						<p class="think"><b>Things to consider/think about:</b></p>
+						<b class="choice-items">2. What to consider when choosing.</b>
+						<ul class="list-align">
+							<li>Are there any other options?</li>
+							<li>Which is easiest to use or incorporate in your existing project?</li>
+							<li>Does whatever design change it makes really benifit the project?</li>
+						</ul>
+					</section>
+				</section>
+
+<!-- Section 4 -->
+				<section>
+					<section>
+						Section 4 — Implementation
+						<img src="images/doing.png" alt="implement">
+					</section>
+
+					<section>
+						<p class="titles">Ways to Identify possible conflicts between tools</p>
+						<!-- <p>Several examples here that will include issues that can pop up when 2 or more tools are used in conjuction with each other</p> -->
+						<ol>
+							<li>Througly study documentation</li>
+							<li>Read up on other people's experiences with preferred tools</li>
+							<li>Ask for opinions within your network</li>
+							<li>Try using tools together on a smaller test/side project</li>
+						</ol>
+					</section>
+
+					<!-- <section>
+						<p class="titles">Ways to Identify possible conflicts between tools</p>
 						<p><i>Example:</i></p>
+						<p>You decide to create a blogging platform using the following tools/methods</p>
+						<ul>
+							<li>Framework: Bootstrap</li>
+							<li>Preprocessor: PostCSS</li>
+							<li>Naming Convention: SMACCS</li>
+						</ul>
+					</section> -->
+
+					<section>
+						<p class="titles">Ways to Identify possible conflicts between tools</p>
+						<p><i>Example:</i></p>
+						<p>You decide to create a blogging platform using the following tools/methods</p>
+						<ul>
+							<li>Framework: Bootstrap</li>
+							<li>Preprocessor: SASS</li>
+							<li>Naming Convention: SMACCS</li>
+						</ul>
+					</section>
+
+					<section>
+						<p class="titles">Ways to Identify possible conflicts between tools</p>
+						<p><i>Example:</i></p>
+						<p>You attempt to get comfortable using all three products together and run into the following issue:</p>
+						<p>-Bootstrap has it's own naming conventions. How do you then use it's features with the naming conventions you created using the SMACCS method</p>
+					</section>
+
+					<section>
+						<p class="titles">Figuring out how to fix them</p>
+						<ol>
+							<li>Dig deeper: look up solutions to the specific issue you're having</li>
+							<li>Again, ask around</li>
+							<li>Experiment</li>
+						</ol>
+					</section>
+
+					<section>
+						<p class="titles">Figuring out how to fix them</p>
+						<p><i>Example:</i></p>
+						<p>After reading up on the issue via a blog post by another developer on Medium, you decide to try incorporating bootstrap in your SMACSS names by extending their features into it using SASS</p>
+					</section>
+
+					<section>
+						<p class="titles">Setting up your development environment and incorporating tools and solutions</p>
+						<p>Pretty straight forward...</p>
+						<ol>
+							<li>Think about how solutions might scale</li>
+							<li>Think about other tools that may be necessary to get tools to work together in larger environments</li>
+						</ol>
+					</section>
+
+					<section>
+						<p class="titles">Setting up your development environment and incorporating tools and solutions</p>
+						<p><i>Example:</i></p>
+						<p>You start a new project, pull in SASS, Bootstrap and customised SMACCS. Because the project is bigger:</p>
+						<ol>
+							<li>You decide to download a local version of bootstrap instead of relying on a CDN</li>
+							<li>You decide to compile your SASS with Compass instead of testing it out in codepen</li>
+						</ol>
+					</section>
+
+					<section>
+						<p class="titles">Setting up your development environment and incorporating tools and solutions</p>
+						<p><i>Example:</i></p>
+						<p>3. And you (or your devops person) decide that when it's ready for launch you'll deploy it using AWS for relatively easy compilation rather than just launching it in Github pages.</p>
 					</section>
 				</section>
 
 				<section>
-					<section>Section 4 — Implementation</section>
-
-					<section>
-						<p>Identifying possible conflicts</p>
-						<p>Several examples here that will include issues that can pop up when 2 or more tools are used in conjuction with each other</p>
-					</section>
-
-					<section>
-						<p>Figuring out how to fix them</p>
-						<p>Talks about possible solutions to issues identified above and how to find the right information on finding solutions</p>
-					</section>
-
-					<section>
-						<p>Actually setting up your development environment and getting started</p>
-						<p>Discuss tools normally used to setup environments and how to figure out how to add any spcific tool</p>
-					</section>
+					<p class="titles">Quick Mention: Setting up a Style Guide</p>
+					<p>Style guides are a set of standards for the writing and design of documents, either for general use or for a specific publication, organization, or field.</p>
+					<p>Useful for/as:</p>
+					<ol>
+						<li>Onboarding</li>
+						<li>Setting standards</li>
+						<li>Quick Reference</li>
+					</ol>
+					<!-- <p> What it is, why you should have one, tools you can use to create one and other things to think about</p> -->
 				</section>
 
 				<section>
-					<p>Bonus: Setting up a Style Guide</p>
-					<p> What it is, why you should have one, tools you can use to create one and other things to think about</p>
+					<p class="titles">Quick Mention: Setting up a Style Guide</p>
+					<p>To learn more, start here: <a href="https://www.smashingmagazine.com/2015/04/an-in-depth-overview-of-living-style-guide-tools/">An in Depth Overview of Living Style Guide Tools</a></p>
 				</section>
 
 				<section>
-					<p>Another Bonus (Because why not): Where your CSS Environment Goes</p>
+					<p class="titles">Another Bonus (Because why not): Where your CSS Environment Goes</p>
 					<p>Information on where a developers css environment can potentially fit into a larger web framework environment</p>
 				</section>
 
 				<section>
-					<p>One More Thing: Utilizing existing css tools that come with other (mainly javascript)tools</p>
+					<p class="titles">One More Thing: Utilizing existing css tools that come with other (mainly javascript)tools</p>
 					<p>Discuss UI's for things like Ionic and Angular</p>
 				</section>
 			</div>
