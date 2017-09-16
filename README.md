@@ -22,3 +22,6 @@ Today there are multiple css frameworks, preprocessors, grids and naming strateg
 	- Figuring out how to customize naming strategies or tools for your project
 	- Determining what information or content is useful when researching and using methodologies and tools
 	
+## Workshop Presentation ##
+-https://drive.google.com/open?id=0By13Fl5YcR5vb19QWUtwUXZ1OUU
+	
