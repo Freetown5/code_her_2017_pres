@@ -24,4 +24,7 @@ Today there are multiple css frameworks, preprocessors, grids and naming strateg
 	
 ## Workshop Presentation ##
 -https://drive.google.com/open?id=0By13Fl5YcR5vb19QWUtwUXZ1OUU
+
+## This presentation online ##
+- https://www.slideshare.net/IsatuConteh1/css-tools-and-methodologies
 	
